@@ -106,7 +106,7 @@ public class WVersionManager implements IWVersionManager {
 		case MODE_CHECK_VERSION:
 			builder.setPositiveButton(getUpdateNowLabel(), listener);
 			if (forceUpgrade) {
-				setDialogCancelable(false);
+				builder.setCancelable(false);
 			} else {
 				builder.setNeutralButton(getRemindMeLaterLabel(), listener);
 				builder.setNegativeButton(getIgnoreThisVersionLabel(), listener);
